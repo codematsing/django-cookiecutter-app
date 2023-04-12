@@ -2,6 +2,8 @@
 # from django.urls import resolve, reverse
 # from {{cookiecutter.app_name}}.models import {{cookiecutter.snake_case_model_name}}
 # from {{cookiecutter.app_name}}.tests.factories import {{cookiecutter.snake_case_model_name}}Factory
+# import logging
+# logger = logging.getLogger(__name__)
 
 # class {{cookiecutter.snake_case_model_name}}UrlsTestCase(TestCase):
 

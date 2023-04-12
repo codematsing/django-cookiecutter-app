@@ -2,6 +2,12 @@
 from django.db import models
 from django.urls import reverse
 from django.contrib.auth import get_user_model
+import os
+
+# def rename_upload(instance, filename):
+#     filename, ext = os.path.splitext(filename)
+#     timestamp = instance.updated_at.strftime('%Y%m%d%H%M%S')
+#     return f"{instance.name}_v{instance.version_no}_{timestamp}{ext}" 
 
 # Create your models here.
 class {{cookiecutter.snake_case_model_name}}(models.Model):
@@ -13,6 +19,8 @@ class {{cookiecutter.snake_case_model_name}}(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     updated_by = models.ForeignKey(get_user_model(), on_delete=models.SET_NULL, related_name='%(app_label)s_%(class)s_updated_by')
+    # attachment = models.FileField(upload_to=rename_upload)
+    # uploaded_by = models.ForeignKey(get_user_model(), on_delete=models.RESTRICT, related_name='%(app_label)s_%(class)s_uploaded_by')
 
     class Meta:
         permissions = [
