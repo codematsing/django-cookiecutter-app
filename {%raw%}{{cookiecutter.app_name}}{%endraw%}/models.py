@@ -12,7 +12,7 @@ class {{cookiecutter.snake_case_model_name}}(models.Model):
     )
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    updated_by = models.ForeignKey(get_user_model(), on_delete=models.SET_NULL)
+    updated_by = models.ForeignKey(get_user_model(), on_delete=models.SET_NULL, related_name='%(app_label)s_%(class)s_updated_by')
 
     class Meta:
         permissions = [
