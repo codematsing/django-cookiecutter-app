@@ -2,6 +2,7 @@ from django.urls import resolve, reverse
 from django.test import TestCase
 from django.test import Client
 from {{ cookiecutter.project_slug }}.users.tests.factories import UserFactory
+from {{cookiecutter.app_name}}.tests.factories import {{cookiecutter.snake_case_model_name}}Factory
 import logging
 logger = logging.getLogger(__name__)
 
