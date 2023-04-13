@@ -30,15 +30,15 @@ class {{cookiecutter.snake_case_model_name}}UpdateAjaxView(BaseUpdateAjaxView):
 class {{cookiecutter.snake_case_model_name}}DeleteAjaxView(BaseDeleteAjaxView):
 	model = {{cookiecutter.snake_case_model_name}}
 
-class {{cookiecutter.snake_case_model_name}}<snake_case_action>AjaxView(BaseActionAjaxView):
-	model = {{cookiecutter.snake_case_model_name}}
+# class {{cookiecutter.snake_case_model_name}}<snake_case_action>AjaxView(BaseActionAjaxView):
+# 	model = {{cookiecutter.snake_case_model_name}}
 
-class {{cookiecutter.snake_case_model_name}}Add<snake_case_model_name_fk>AjaxView(BaseAddObjectAjaxView):
-	model = {{cookiecutter.snake_case_model_name}}
+# class {{cookiecutter.snake_case_model_name}}Add<snake_case_model_name_fk>AjaxView(BaseAddObjectAjaxView):
+# 	model = {{cookiecutter.snake_case_model_name}}
 
-class {{cookiecutter.snake_case_model_name}}Remove<snake_case_model_name_fk>AjaxView(BaseRemoveObjectAjaxView):
-	model = {{cookiecutter.snake_case_model_name}}
+# class {{cookiecutter.snake_case_model_name}}Remove<snake_case_model_name_fk>AjaxView(BaseRemoveObjectAjaxView):
+# 	model = {{cookiecutter.snake_case_model_name}}
 
-class {{cookiecutter.snake_case_model_name}}<snake_case_action><snake_case_model_name_fk>AjaxView(BaseActionObjectAjaxView):
-	model = {{cookiecutter.snake_case_model_name}}
+# class {{cookiecutter.snake_case_model_name}}<snake_case_action><snake_case_model_name_fk>AjaxView(BaseActionObjectAjaxView):
+# 	model = {{cookiecutter.snake_case_model_name}}
 {% endraw %}
