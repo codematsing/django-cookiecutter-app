@@ -24,7 +24,7 @@ url_patterns = [
     # create
     path(
         "new/",
-        {{cookiecutter.snake_case_model_name}}ListAjaxView.as_view(),
+        {{cookiecutter.snake_case_model_name}}CreateAjaxView.as_view(),
         name="create"
     ),
     # detail
