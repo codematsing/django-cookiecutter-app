@@ -1,7 +1,7 @@
 {% raw %}
 from django.shortcuts import render
 from {{cookiecutter.app_name}}.models import {{cookiecutter.snake_case_model_name}}
-from utils.views.ajax import (
+from utils.base_views.ajax.views import (
 	BaseListAjaxView,
 	BaseCreateAjaxView,
 	BaseDetailAjaxView,

@@ -1,6 +1,6 @@
 {% raw %}
 from django.urls import path, include
-from views import (
+from .views import (
 	{{cookiecutter.snake_case_model_name}}ListAjaxView,
 	{{cookiecutter.snake_case_model_name}}CreateAjaxView,
 	{{cookiecutter.snake_case_model_name}}DetailAjaxView,
