@@ -73,7 +73,7 @@ url_patterns = [
     # ),
     path(
         "ajax/",
-        include(apps.ajax.urls,
+        include("{{cookiecutter.app_name}}.ajax.urls",
         namespace="ajax")
     )
 ]
