@@ -1,6 +1,6 @@
 {% raw %}
 from django.shortcuts import render
-from models import {{cookiecutter.snake_case_model_name}}
+from .models import {{cookiecutter.snake_case_model_name}}
 from utils.base_views.views import (
 	BaseListView,
 	BaseCreateView,
