@@ -20,6 +20,9 @@ logger = logging.getLogger(__name__)
 class {{cookiecutter.snake_case_model_name}}ListView(BaseListView):
 	model = {{cookiecutter.snake_case_model_name}}
 
+class {{cookiecutter.snake_case_model_name}}CreateView(BaseCreateView):
+	model = {{cookiecutter.snake_case_model_name}}
+
 class {{cookiecutter.snake_case_model_name}}DetailView(BaseDetailView):
 	model = {{cookiecutter.snake_case_model_name}}
 

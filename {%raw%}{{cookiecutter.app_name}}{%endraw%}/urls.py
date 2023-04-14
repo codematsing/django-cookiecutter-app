@@ -2,6 +2,7 @@
 from django.urls import path, include
 from .views import (
 {{cookiecutter.snake_case_model_name}}ListView,
+{{cookiecutter.snake_case_model_name}}CreateView,
 {{cookiecutter.snake_case_model_name}}DetailView,
 {{cookiecutter.snake_case_model_name}}UpdateView,
 {{cookiecutter.snake_case_model_name}}DeleteView,
