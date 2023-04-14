@@ -34,19 +34,19 @@ url_patterns = [
     path(
         "<int:pk>/",
         {{cookiecutter.snake_case_model_name}}DetailView.as_view(),
-        "detail"
+        name="detail"
     ),
     # update
     path(
         "<int:pk>/edit/",
         {{cookiecutter.snake_case_model_name}}UpdateView.as_view(),
-        "update"
+        name="update"
     ),
     # delete
     path(
         "<int:pk>/delete/",
         {{cookiecutter.snake_case_model_name}}DeleteView.as_view(),
-        "delete"
+        name="delete"
     ),
     # actions
     # path(

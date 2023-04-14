@@ -31,13 +31,13 @@ urlpatterns = [
     path(
         "<int:pk>/",
         {{cookiecutter.snake_case_model_name}}DetailAjaxView.as_view(),
-        "detail"
+        name="detail"
     ),
     # update
     path(
         "<int:pk>/edit/",
         {{cookiecutter.snake_case_model_name}}UpdateAjaxView.as_view(),
-        "update"
+        name="update"
     ),
     # # delete
     # path(
