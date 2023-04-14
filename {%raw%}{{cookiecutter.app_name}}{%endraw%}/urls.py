@@ -75,7 +75,6 @@ url_patterns = [
         "ajax/",
         include("{{cookiecutter.app_name}}.ajax.urls"),
         namespace="ajax")
-    )
 ]
 
 {% endraw %}
