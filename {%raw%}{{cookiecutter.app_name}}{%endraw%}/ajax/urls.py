@@ -17,7 +17,7 @@ app_name = "{{cookiecutter.app_name}}_ajax"
 urlpatterns = [
     # add
     path(
-        "",
+        "list/",
         {{cookiecutter.snake_case_model_name}}ListAjaxView.as_view(),
         name="list"
     ),
