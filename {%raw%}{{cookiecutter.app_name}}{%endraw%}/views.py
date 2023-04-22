@@ -11,6 +11,7 @@ from utils.base_views.views import (
 	BaseAddObjectView,
 	BaseRemoveObjectView,
 	BaseActionObjectView,
+	BaseAutocompleteView,
 )
 
 import logging
@@ -33,6 +34,9 @@ class {{cookiecutter.snake_case_model_name}}DeleteView(BaseDeleteView):
 	model = {{cookiecutter.snake_case_model_name}}
 
 class {{cookiecutter.snake_case_model_name}}DeleteView(BaseDeleteView):
+	model = {{cookiecutter.snake_case_model_name}}
+
+class {{cookiecutter.snake_case_model_name}}AutocompleteView(BaseAutocompleteView):
 	model = {{cookiecutter.snake_case_model_name}}
 
 # class {{cookiecutter.snake_case_model_name}}<snake_case_action>View(BaseActionView):

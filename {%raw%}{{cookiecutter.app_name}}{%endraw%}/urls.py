@@ -6,6 +6,7 @@ from .views import (
 {{cookiecutter.snake_case_model_name}}DetailView,
 {{cookiecutter.snake_case_model_name}}UpdateView,
 {{cookiecutter.snake_case_model_name}}DeleteView,
+{{cookiecutter.snake_case_model_name}}AutocompleteView,
 # {{cookiecutter.snake_case_model_name}}<snake_case_action>View,
 # {{cookiecutter.snake_case_model_name}}Add<snake_case_model_name_fk>View,
 # {{cookiecutter.snake_case_model_name}}Remove<snake_case_model_name_fk>View,
@@ -47,6 +48,12 @@ url_patterns = [
         "<int:pk>/delete/",
         {{cookiecutter.snake_case_model_name}}DeleteView.as_view(),
         name="delete"
+    ),
+    # autocomplete
+    path(
+        "autocomplete/",
+        {{cookiecutter.snake_case_model_name}}AutocompleteView.as_view(),
+        name="autocomplete"
     ),
     # actions
     # path(
