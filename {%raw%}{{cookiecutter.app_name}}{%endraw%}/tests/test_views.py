@@ -1,4 +1,5 @@
 import pytest
+from django.test import TestCase
 from django.conf import settings
 from django.contrib import messages
 from django.contrib.auth.models import AnonymousUser

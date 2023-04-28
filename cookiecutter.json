@@ -3,5 +3,6 @@
   "snake_case_app_name" :  "{% raw %}{{ cookiecutter.app_name[:-1]|replace('_', ' ')|title|replace(' ', '')|trim()}}{% endraw %}",
   "model_name" :  "{% raw %}{{cookiecutter.app_name}}{% endraw %}",
   "snake_case_model_name" :  "{% raw %}{{ cookiecutter.model_name[:-1]|replace('_', ' ')|title|replace(' ', '')|trim()}}{% endraw %}",
-  "project_slug" :  "project_slug"
+  "project_slug" :  "project_slug",
+  "view_prefix" :  ["Base", "Admin", "Public"]
 }

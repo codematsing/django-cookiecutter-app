@@ -15,6 +15,7 @@ from {{cookiecutter.app_name}}.models import {{cookiecutter.snake_case_model_nam
 from {{cookiecutter.project_slug}}.users.tests.factories import UserFactory
 
 class {{cookiecutter.snake_case_model_name}}Factory(DjangoModelFactory):
+    name = Faker("name")
     updated_by = SubFactory(UserFactory)
 
     class Meta:

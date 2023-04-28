@@ -2,7 +2,7 @@ from django.test import TestCase
 import logging
 logger = logging.getLogger(__name__)
 from {{cookiecutter.app_name}}.tests.factories import {{cookiecutter.snake_case_model_name}}Factory
-from {{cookiecutter.app_name}}.forms import {{cookiecutter.snake_case_model_name}}Form
+# from {{cookiecutter.app_name}}.forms import {{cookiecutter.snake_case_model_name}}Form
 
 class {{cookiecutter.snake_case_model_name}}FormsTestCase(TestCase):
 

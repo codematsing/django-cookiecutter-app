@@ -18,7 +18,7 @@ class {{cookiecutter.snake_case_model_name}}(models.Model):
     )
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    updated_by = models.ForeignKey(get_user_model(), on_delete=models.SET_NULL, related_name='%(app_label)s_%(class)s_updated_by')
+    updated_by = models.ForeignKey(get_user_model(), on_delete=models.RESTRICT, related_name='%(app_label)s_%(class)s_updated_by')
     # attachment = models.FileField(upload_to=rename_upload)
     # uploaded_by = models.ForeignKey(get_user_model(), on_delete=models.RESTRICT, related_name='%(app_label)s_%(class)s_uploaded_by')
 

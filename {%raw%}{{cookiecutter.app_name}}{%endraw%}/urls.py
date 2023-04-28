@@ -16,9 +16,6 @@ from .views import (
 app_name = "{{cookiecutter.app_name}}"
 
 urlpatterns = [
-    path('ajax/', "{{cookiecutter.app_name}}.ajax.urls", name='ajax'),
-]
-url_patterns = [
     # list
     path(
         "",
